@@ -9,22 +9,23 @@ public class Producto {
     @Id
     private String id;
     private String nombre;
-    private double precio;
-    private int stock;
+    private String marca;
+    private double stock;
 
-    public Producto() {}
-
-    public Producto(String nombre, double precio, int stock) {
+    public Producto(String nombre, String marca, double stock) {
         this.nombre = nombre;
-        this.precio = precio;
-        this.stock = stock;
+        this.marca = marca;
+        this.stock = 3;
     }
 
+    // Getters y Setters para que la API pueda leer los datos
     public String getId() { return id; }
     public String getNombre() { return nombre; }
-    public double getPrecio() { return precio; }
-    public int getStock() { return stock; }
+    public String getMarca() { return marca; }
+    public double getStock() { return stock; }
+
     public void setNombre(String nombre) { this.nombre = nombre; }
-    public void setPrecio(double precio) { this.precio = precio; }
-    public void setStock(int stock) { this.stock = stock; }
+    public void setMarca(String marca) { this.nombre = marca; }
+    public void setStock(double stock) { this.stock = stock; }
+
 }
