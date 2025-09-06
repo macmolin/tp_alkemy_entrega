@@ -13,5 +13,4 @@ public interface ProductoService {
 
     public Producto saveProducto(Producto producto);
 
-    public void deleteProducto(String id);
 }

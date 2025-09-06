@@ -6,6 +6,7 @@ import org.bbva.tp_alkemy.servicios.ProductoService;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
+import java.util.Optional;
 
 
 public class ProductoServicioImpl implements ProductoService {
@@ -16,6 +17,16 @@ public class ProductoServicioImpl implements ProductoService {
         @Override
         public List<Producto> getAllProductos() {
             return productoRepositorio.findAll();
+        }
+
+        @Override
+        public Optional<Producto> getProductoById(String id) {
+                return Optional.empty();
+        }
+
+        @Override
+        public Producto saveProducto(Producto producto) {
+                return null;
         }
 
 
